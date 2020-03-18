@@ -4,28 +4,25 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	 int liczba =0b1101_1000;
+	 int var =0b1101_1000;
 	 Scanner scan = new Scanner(System.in);
-	 //rozkmin to, miały być 3 klasy, ale jak utworzyć obiekt? jednak chyba jedna klasa w której utworzysz 3 metody
 	 while(true) {
          System.out.println("Podaj podstawe systemu, do wyboru : dziesieć,trzy,szesnaście");
-         String wybor = scan.nextLine();
+         String choice = scan.nextLine();
          Konwertuj konv;
-         if (wybor.equals("dziesieć")) {
-             konv = new
-             konwerter.ToDec(liczba);
+         konv = new Konwertuj();
+         if (choice.equals("dziesieć")) {
+             konv.ToDec(var);
              break;
-         } else if (wybor.equals("trzy")) {
-             konwerter.ToBase3(liczba);
+         } else if (choice.equals("trzy")) {
+             konv.ToBase3(var);
              break;
-         } else if (wybor.equals("szesnaście")) {
-             konwerter.ToHex(liczba);
+         } else if (choice.equals("szesnaście")) {
+             konv.ToHex(var);
              break;
          } else
              System.out.println("To nie jest prawidłowy wybór");
      }
-
-        konv.convert(d)
     }
 
 }
