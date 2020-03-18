@@ -10,15 +10,15 @@ public class Main {
          System.out.println("Podaj podstawe systemu, do wyboru : dziesieć,trzy,szesnaście");
          String choice = scan.nextLine();
          Konwertuj konv;
-         konv = new Konwertuj();
+         konv = new Konwertuj(var);
          if (choice.equals("dziesieć")) {
-             konv.ToDec(var);
+             konv.ToDec();
              break;
          } else if (choice.equals("trzy")) {
-             konv.ToBase3(var);
+             konv.ToBase3();
              break;
          } else if (choice.equals("szesnaście")) {
-             konv.ToHex(var);
+             konv.ToHex();
              break;
          } else
              System.out.println("To nie jest prawidłowy wybór");
