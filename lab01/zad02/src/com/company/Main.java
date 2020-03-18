@@ -17,7 +17,7 @@ public class Main {
     Scanner scan = new Scanner(System.in);
     String pesel =scan.nextLine();
     AnalyzePesel analyze = new AnalyzePesel(pesel);
-    DateOfBirth date = new DateOfBirth(analyze.gestDate());
+    DateOfBirth date = new DateOfBirth(analyze.getDate());
     date.show();
     Sex check_sex = new Sex(analyze.getSex());
     check_sex.show();
