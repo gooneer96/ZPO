@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd843d07-a5f0-489e-936b-ebd8f8a05948" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../zad02/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zad02/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zad02/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zad02/zad02.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Base3Conv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Konwertuj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DecConv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/HexConv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter.java" afterDir="false" />
-    </list>
+    <list default="true" id="cd843d07-a5f0-489e-936b-ebd8f8a05948" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +75,7 @@
       <updated>1583674524970</updated>
       <workItem from="1583674531609" duration="4086000" />
       <workItem from="1584272839918" duration="234000" />
-      <workItem from="1584549347055" duration="1023000" />
+      <workItem from="1584549347055" duration="1540000" />
     </task>
     <servers />
   </component>
