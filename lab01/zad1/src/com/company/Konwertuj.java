@@ -5,7 +5,7 @@ public class Konwertuj implements converter {
     int x;
     Konwertuj(int y)
     {
-        y=x;
+        x=y;
     }
 
     public String ToBase3()
