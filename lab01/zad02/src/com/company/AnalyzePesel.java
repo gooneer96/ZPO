@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.IllegalFormatException;
+
 public class AnalyzePesel {
 
     String pesel;
@@ -19,12 +21,23 @@ public class AnalyzePesel {
             {
                 throw new IllegalArgumentException("Pesel składa się z 11 cyfr");
             }
+            int  weights[]={9,7,3,1,9,7,3,1,9,7};
+            int check=0;
+            for(int i=0;i<10;i++)
+            {
+                check += weights[i] * PESEL[i];
+            }
+            int checkcontrol= check % 10;
+            if( checkcontrol == PESEL[10])
+            {}
+            else
+            {
+                throw new IllegalArgumentException(" Numer pesel jest nieprawidłowy, Liczba kontrola nieprawidłowa");
+            }
         }
         catch (NumberFormatException exception) {
             System.out.println("To nie jest prawidłowy numer Pesel");
-        }
-        catch (IllegalArgumentException exception) {
-            System.out.println("Pesel powinien mieć 11 cyfr");
+            System.exit(0);
         }
     }
 
