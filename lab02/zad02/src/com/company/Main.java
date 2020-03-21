@@ -1,9 +1,53 @@
 package com.company;
 
+import java.text.Collator;
+import java.util.Arrays;
+import java.util.Locale;
+
+
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Collator collator = Collator.getInstance(new Locale("pl", "PL"));
+        SortTool sort = new SortTool();
+        Shuffle shuffle = new Shuffle();
+        String[] words = {"Łukasz", "Ścibor", "Stefania", "Darek", "Agnieszka", "Zyta", "Órszula", "Świętopełk"};
+        sort.sortStrings(collator,words);
+        System.out.println("First function: " + Arrays.deepToString(words));
+        shuffle.shuffleArray(words);
+        System.out.println("shuffle \n" + Arrays.deepToString(words));
+        sort.fastSortStrings(collator,words);
+        System.out.println("Second function: " + Arrays.deepToString(words));
+        shuffle.shuffleArray(words);
+        System.out.println("shuffle\n" + Arrays.deepToString(words));
+        sort.fastSortStrings2(collator,words);
+        System.out.println("Third function: " + Arrays.deepToString(words));
+
+        double time=System.nanoTime();
+        for(int i =0; i <100000;i++)
+        {
+            shuffle.shuffleArray(words);
+            sort.sortStrings(collator,words);
+        }
+        time = (System.nanoTime() - time) * Math.pow(10,-9);
+        System.out.println("First method x100k duration  :" + time + " sec ");
+        time=System.nanoTime();
+        for(int i =0; i <100000;i++)
+        {
+            shuffle.shuffleArray(words);
+            sort.fastSortStrings(collator,words);
+        }
+        time = (System.nanoTime() - time) * Math.pow(10,-9);
+        System.out.println("Second method x100k duration  :" + time + " sec ");
+        time=System.nanoTime();
+        for(int i =0; i <100000;i++)
+        {
+            shuffle.shuffleArray(words);
+            sort.fastSortStrings2(collator,words);
+        }
+        time = (System.nanoTime() - time) * Math.pow(10,-9);
+        System.out.println("Third method x100k duration  :" + time + " sec ");
     }
 }
 
