@@ -1,5 +1,7 @@
 package com.company;
 
+
+
 public class DrawTool {
 
     public static void drawOneTick (int tickLength,int lengthMax)
@@ -24,9 +26,9 @@ public class DrawTool {
             drawTicks(tickLength- 1,lengthMax);
         }
     }
-    public static void drawRuler(int nInches, int majorLength) {
+    public static void drawRuler(int nLabels, int majorLength) {
         drawOneTick(majorLength, 0,majorLength); // tick 0
-        for (int i = 1; i <= nInches; i++) {
+        for (int i = 1; i <= nLabels; i++) {
             drawTicks(majorLength- 1,majorLength); // podziałka
             drawOneTick(majorLength, i,majorLength); // tick x
         }

@@ -7,13 +7,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int lenght,inches;
+        int length,labels;
         System.out.println("Podaj długość: ");
         Scanner scan = new Scanner(System.in);
-
+        labels = scan.nextInt();
+        System.out.println("Podaj liczbę zagnieżdżeń: ");
+        length = scan.nextInt();
         DrawTool tool = new DrawTool();
         //tool.drawTicks(5,5);
-        tool.drawRuler(2,5);
+        tool.drawRuler(labels,length);
     }
 }
 
