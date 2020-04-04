@@ -1,0 +1,52 @@
+{
+   "krzyczeć":[
+      "shout",
+      "cry",
+      "scream"
+   ],
+   "kosz":[
+      "bin",
+      "trash can"
+   ],
+   "pieniądze":[
+      "money",
+      "cash"
+   ],
+   "ból":[
+      "pain",
+      "sore",
+      "hurt"
+   ],
+   "słodycze":[
+      "sweets",
+      "candy",
+      "confection"
+   ],
+   "spodnie":[
+      "trousers",
+      "pants",
+      "slacks"
+   ],
+   "bezdomny":[
+      "homeless",
+      "houseless",
+      "stray"
+   ],
+   "dom":[
+      "house",
+      "home",
+      "residence"
+   ],
+   "kontynent":[
+      "continent",
+      "mainland"
+   ],
+   "uciec":[
+      "flee",
+      "escape",
+      "get away",
+      "leave",
+      "bolt",
+      "run away"
+   ]
+}
