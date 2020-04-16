@@ -10,7 +10,7 @@ public class Main {
         int n = Integer.parseInt(args[0]);
         double m = Double.parseDouble(args[1]);
         double σ = Double.parseDouble(args[2]);
-        assert σ >= 0 : "ERROR: σ musi byc dodatnie";
+        assert σ >= 0 : "ERROR: σ must be positive number";
         try{
             DataOutputStream outbin = new DataOutputStream(new FileOutputStream("binFile.bin"));
             DataInputStream inbin = new DataInputStream(new FileInputStream("binFile.bin"));
