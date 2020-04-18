@@ -83,7 +83,7 @@ public class StudyProcess {
         System.out.println();
     }
 
-    void dailySubmit(int n, int k,String path){
+   public void dailySubmit(int n, int k,String path){
 
         List<Base> words = readFile(path);
         List<Base> knownWords = new ArrayList<>();
