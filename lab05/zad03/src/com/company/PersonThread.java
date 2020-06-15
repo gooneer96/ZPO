@@ -16,6 +16,7 @@ public class PersonThread implements Runnable {
 
     public synchronized void personWent(){
         Main.went += 1;
+
     }
 
 

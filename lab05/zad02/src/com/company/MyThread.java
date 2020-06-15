@@ -3,6 +3,7 @@ package com.company;
 public class MyThread implements Runnable{
     Thread t;
     String input;
+    public static int sth;
     public MyThread(String input)
     {
         t=new Thread(this);

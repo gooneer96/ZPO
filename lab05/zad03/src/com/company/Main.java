@@ -13,6 +13,7 @@ public class Main {
         double p1 = 0.05; // possibility for going out to cinema
         double p2 = 0.3; // possibility to leave during movie
         int n = 100;
+        Per
 
         Executor executor = Executors.newFixedThreadPool(n);
         for(int i=0; i<n; i++)
